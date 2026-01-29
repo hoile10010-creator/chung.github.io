@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4b6cb7;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-left: 5px solid #4b6cb7;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .info-card {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-card h3 i {
+            color: #4b6cb7;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "•";
+            color: #4b6cb7;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -3px;
+        }
+        
+        .media-container {
+            margin-top: 20px;
+        }
+        
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin: 15px auto;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .highlight h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c8d;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- THAY ẢNH ĐẠI DIỆN CỦA BẠN VÀO ĐÂY -->
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                 alt="Ảnh đại diện" class="avatar">
+            <h1>ĐẶNG THÀNH CHUNG</h1>
+            <p class="tagline">Học sinh lớp 12A4 - Tư Duy Khác Đời</p>
+        </header>
+        
+        <section class="section">
+            <h2>Giới Thiệu Chung</h2>
+            <div class="content-grid">
+                <div class="info-card">
+                    <h3><i>+</i> Thông Tin Cá Nhân</h3>
+                    <p><strong>Tên:</strong>Đặng Thành Chung</p>
+                    <p><strong>Tuổi:</strong>17 tuổi</p>
+                    <p><strong>Trường:</strong>THPT Yêm Vien</p>
+                    <p><strong>Lớp:</strong>12A4</p>
+                    <p><strong>Sở thích:</strong>Ngủ nướng,chơi game,chém gió cùng bạn bè,đi phượt,trải nghiệm ẩm thực </p>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i>+</i> Mục Tiêu & Ước Mơ</h3>
+                    <p>mục tiêu đõ đại học:Học tập nghiên cứu chuyên sâu về mảng CNTT và ước mơ trở thành 1 GAME DEVELOPER</p>
+                    <p>Sống ở đời cũng có lúc phải biết nằm thẳng</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>SỞ thích sao ?</h2>
+            <div class="content-grid">
+                <div class="info-card">
+                    <h3><i>👍</i> Những Điều Tôi Thích</h3>
+                    <ul>
+                        <li>Nằm ườn cả ngày</li>
+                        <li>thích mọi loại mỹ vị nhân gian trên đời</li>
+                        <li>Vua càn quét quán ăn buffet</li>
+                        <li>Đi chu du khấp nơi khám phá thế giới</li>
+                        <li>Muốn làm quen với nhiều người hơn nữa</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i></i> Những Điều Tôi Không Thích</h3>
+                    <ul>
+                        <li>Sự phản bội giữa tình ae nhớ</li>
+                        <li>Mấy con người hay lắm mồm soi mói trong khi ai hỏi mà thống thống trả lời?</li>
+                        <li>Càng nhiều sự giả tạo càng thấy buồn nôn</li>
+                        <li>Đồ ăn quá ngọt</li>
+                        <li>cấp đặc biệt:môn văn :>> học méo vô</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="media-container">
+                <h3>ĐÔI nét về bản thân TA</h3>
+                <div class="imagine-container">
+                    <img src=" https://drive.google.com/uc?export=view&id=19gTu8nUwcgL5Ka3f0cgTmBiCXVR1gkWz/view?usp=sharing" 
+                         alt="Sở thích nghe nhạc" class="drive-img">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                         alt="Sở thích nghe nhạc" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                         alt="Sở thích chơi game" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                         alt="Sở thích thể thao" class="gallery-img">
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Kỉ liệm mà tôi nhớ </h2>
+            <div class="highlight">
+                <h3>Khoảnh khắc đáng nhớ</h3>
+                <p></p></p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="info-card">
+                    <h3><i>+</i> Hoạt Động Thường Ngày</h3>
+                    <ul>
+                        <li>[Hoạt động 1 - ví dụ: Ăn tối cùng nhau]</li>
+                        <li>[Hoạt động 2 - ví dụ: Xem phim cuối tuần]</li>
+                        <li>[Hoạt động 3 - ví dụ: Dọn dẹp nhà cửa]</li>
+                        <li>[Hoạt động 4 - ví dụ: Nấu ăn chung]</li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i>🎉</i> Dịp Đặc Biệt</h3>
+                    <ul>
+                        <li>[Dịp đặc biệt 1 - ví dụ: Sinh nhật thành viên]</li>
+                        <li>[Dịp đặc biệt 2 - ví dụ: Lễ Tết]</li>
+                        <li>[Dịp đặc biệt 3 - ví dụ: Kỳ nghỉ hè]</li>
+                        <li>[Dịp đặc biệt 4 - ví dụ: Đi du lịch cùng nhau]</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="media-container">
+                <h3>Video về hoạt động gia đình</h3>
+                <!-- THÊM VIDEO CỦA BẠN VÀO ĐÂY -->
+                <video controls poster="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80">
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-family-walking-together-in-a-park-41555-large.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ phát video.
+                </video>
+                <p><em>[Mô tả ngắn về video - ví dụ: Khoảnh khắc gia đình tôi đi dạo trong công viên]</em></p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Góc Nhìn Cá Nhân 💭</h2>
+            <div class="content-grid">
+                <div class="info-card">
+                    <h3><i>🌈</i> Quan Điểm Sống</h3>
+                    <p>[Chia sẻ quan điểm, triết lý sống hoặc bài học cuộc sống quan trọng với bạn]</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i>🚀</i> Dự Định Tương Lai</h3>
+                    <p>[Kế hoạch sau khi tốt nghiệp THPT, dự định học đại học hoặc công việc]</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Trang web được tạo bởi [Tên của bạn] - Học sinh lớp 12</p>
+            <p>© 2023 - Bài tập thực hành HTML theo SGK Tin học 12 KNTT</p>
+            <p><em>"[Câu nói yêu thích hoặc phương châm sống của bạn]"</em></p>
+        </footer>
+    </div>
+</body>
+</html>
